@@ -86,9 +86,9 @@ a:hover {
 .wd-image {
   width: 25%;
   /* height: %; */
-  object-fit:cover;
+  /* object-fit:cover; */
   border-radius:50%;
-  float: left;
+  /* float: left; */
   margin-right: 30px;
 }
 
@@ -97,7 +97,7 @@ a:hover {
   /* height: 25%; */
   object-fit:cover;
   border-radius:50%;
-  float: right;
+  /* float: right; */
   margin-left: 30px;
 }
 
@@ -108,11 +108,36 @@ a:hover {
 
 }
 
+.quote-section {
+  position: absolute;
+  top: 20px;
+  right: 500px;
+}
+
+.top-cloud {
+  position: absolute;
+  right: 200px;
+  top: 40px;
+}
+
+.bottom-cloud {
+  position: absolute;
+  left: 200px;
+  bottom: 300px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
 .skill-row {
   width: 50%;
-  margin: 100px auto 100px auto;
-  text-align: left;
+  /* margin: 100px auto 100px auto; */
+  text-align: center;
   line-height: 2;
+  padding: 0 60px 0 60px;
 }
 
 .intro {
@@ -147,16 +172,4 @@ a:hover {
   color: white;
   line-height: 2;
   padding: 50px 0 20px;
-}
-
-.top-cloud {
-  position: absolute;
-  right: 300px;
-  top: 40px;
-}
-
-.bottom-cloud {
-  position: absolute;
-  left: 250px;
-  bottom: 300px;
 }
