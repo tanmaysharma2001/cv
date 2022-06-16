@@ -1,4 +1,4 @@
 node_modules/
 weather.js
 tsconfig.json
-git rm --cached rollup.config.js
+rollup.config.js
