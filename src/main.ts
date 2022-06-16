@@ -8,7 +8,7 @@ const HumidityElement: HTMLSpanElement = document.querySelector("#humidity") as 
 const TempElement: HTMLSpanElement = document.querySelector("#temp") as HTMLSpanElement;
 const WindElement: HTMLSpanElement = document.querySelector("#wind") as HTMLSpanElement;
 
-function getData() {
+function getData(): void {
     fetch(urlOfAPI).then((response) => {
         return response.json()
     }).then((data => {

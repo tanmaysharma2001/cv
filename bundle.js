@@ -1,13 +1,13 @@
 var urlOfAPI = "https://weatherdbi.herokuapp.com/data/weather/innopolis";
-var CommentElement = document.querySelector("#comment");
-var DayHourElement = document.querySelector("#dayhour");
-var HumidityElement = document.querySelector("#humidity");
-var TempElement = document.querySelector("#temp");
-var WindElement = document.querySelector("#wind");
+const CommentElement = document.querySelector("#comment");
+const DayHourElement = document.querySelector("#dayhour");
+const HumidityElement = document.querySelector("#humidity");
+const TempElement = document.querySelector("#temp");
+const WindElement = document.querySelector("#wind");
 function getData() {
-    fetch(urlOfAPI).then(function (response) {
+    fetch(urlOfAPI).then((response) => {
         return response.json();
-    }).then((function (data) {
+    }).then((data => {
         // !----- Important -----!
         // Note sometimes this API crashes for unknow reasons. So please try later,
         // or please contact me if it doesn't work.
